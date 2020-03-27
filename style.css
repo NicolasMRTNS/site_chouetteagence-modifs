@@ -716,6 +716,7 @@ p {
 h2 {
     font-size: 25px;
     line-height: 1.4em;
+    margin-bottom: 5%;
 }
 
 h3 {
@@ -925,6 +926,14 @@ h3 {
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+    }
+    .col-sm-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dim {
+        margin: 0;
     }
     .nav > li {
         margin-top: 0;
