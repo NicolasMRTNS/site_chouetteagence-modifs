@@ -43,32 +43,8 @@ a:hover {
 .bloc-sm {
   padding: 20px 50px;
 }
-.bg-b-edge,
-.bg-br-edge,
-.bg-center,
-.bg-l-edge,
-.bg-r-edge,
-.bg-t-edge {
-  -webkit-background-size: auto !important;
-  -moz-background-size: auto !important;
-  -o-background-size: auto !important;
-  background-size: auto !important;
-}
 .bg-t-edge {
   background: top no-repeat;
-}
-.bloc-bg-texture::before {
-  content: "";
-  background-size: 2px 2px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.texture-paper::before {
-  background: url(img/texture-paper.png);
-  background-size: 280px 280px;
 }
 .b-parallax {
   background-attachment: fixed;
@@ -85,9 +61,6 @@ a:hover {
 .d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
 .d-bloc p a {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -100,53 +73,11 @@ a:hover {
 .d-bloc h1 a:hover,
 .d-bloc h2 a:hover,
 .d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
 .d-bloc p a:hover {
   color: rgba(255, 255, 255, 1);
 }
 .d-bloc .navbar-toggle .icon-bar {
   background: rgba(255, 255, 255, 1);
-}
-.l-bloc {
-  color: rgba(0, 0, 0, 0.5);
-}
-.l-bloc button:hover {
-  color: rgba(0, 0, 0, 0.7);
-}
-.l-bloc .a-btn,
-.l-bloc .navbar a,
-.l-bloc .navbar-brand,
-.l-bloc a .icon-lg,
-.l-bloc a .icon-md,
-.l-bloc a .icon-sm,
-.l-bloc h1 a,
-.l-bloc h2 a,
-.l-bloc h3 a,
-.l-bloc h4 a,
-.l-bloc h5 a,
-.l-bloc h6 a,
-.l-bloc p a {
-  color: rgba(0, 0, 0, 0.6);
-}
-.l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
-.l-bloc .navbar-brand:hover,
-.l-bloc a:hover .icon-lg,
-.l-bloc a:hover .icon-md,
-.l-bloc a:hover .icon-sm,
-.l-bloc h1 a:hover,
-.l-bloc h2 a:hover,
-.l-bloc h3 a:hover,
-.l-bloc h4 a:hover,
-.l-bloc h5 a:hover,
-.l-bloc h6 a:hover,
-.l-bloc p a:hover {
-  color: rgba(0, 0, 0, 1);
-}
-.l-bloc .navbar-toggle .icon-bar {
-  color: rgba(0, 0, 0, 0.6);
 }
 #bloc-1-hero h1 {
   font-size: 40px;
@@ -384,7 +315,7 @@ p {
   font-size: 15px;
 }
 .tight-width-whitespace {
-  max-width: 600px;
+  max-width: 70%;
   margin: auto auto auto auto;
 }
 .h1-2 {
@@ -479,7 +410,6 @@ h3 {
 }
 .bg-banniere {
   background-image: url(../img/la-chouette-agence-banniere.jpg);
-  background-attachment: fixed;
 }
 .bg-presentation {
   background-image: url(../img/image-de-presentation.jpg);
@@ -578,10 +508,16 @@ h3 {
   .b-parallax {
     background-attachment: scroll;
   }
+  .bg-banniere {
+    background-attachment: scroll;
+  }
   #hero-bloc,
   .page-container {
     overflow-x: hidden;
     position: relative;
+  }
+  .tight-width-whitespace {
+    max-width: 100%;
   }
   .bloc-group,
   .bloc-group .bloc {
